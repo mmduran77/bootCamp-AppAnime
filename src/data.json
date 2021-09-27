@@ -1,0 +1,76 @@
+{
+    "Characters": [
+        {   
+            "name": "Tanjiro",
+            "lastname": "Kamado",
+            "age": 13,            
+            "photo": "https://cdn.superaficionados.com/imagenes/1-kimetsu-no-yaiba-personajes-tanjiro-kamado-1-cke.jpg",
+            "race":"Cazador de Demonios",
+            "friends": ["Inozuke", "Zenitsu"],
+            "sex": "Male" 
+        },
+        {   
+            "name": "Nezuko",
+            "lastname": "Kamado",
+            "age": 12,
+            "photo": "https://cdn.superaficionados.com/imagenes/2-kimetsu-no-yaiba-personajes-nezuko-kamado-cke.jpg",
+            "race": "Demonio",
+            "friends": ["Tanjiro", "Zenitsu"],
+            "sex": "Female"
+        },
+        {   
+            "name": "Zenitsu",
+            "lastname": "Agatsuma",
+            "age": 16,
+            "photo": "https://cdn.superaficionados.com/imagenes/3-kimetsu-no-yaiba-personajes-zenitsu-agatsuma-cke.jpg",
+            "race":"Cazador de Demonios",
+            "friends": ["Inozuke", "Tanjiro"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Inosuke",
+            "lastname": "Hashibira",
+            "age": 15,
+            "photo": "https://cdn.superaficionados.com/imagenes/4-kimetsu-no-yaiba-personajes-inosuke-hashibira-cke.jpg",
+            "race":"Cazador de Demonios",
+            "friends": ["Zenitsu", "Tanjiro"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Giyu",
+            "lastname": "Tomioka",
+            "age": 19,
+            "photo": "https://cdn.superaficionados.com/imagenes/5-kimetsu-no-yaiba-personajes-giyu-tomioka-cke.jpg",
+            "race": "Pilar",
+            "friends": ["Mitsuri","Kyojuro"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Kyojuro",
+            "lastname": "Rengoku",
+            "age": 20,
+            "photo": "https://cdn.superaficionados.com/imagenes/10-kimetsu-no-yaiba-personajes-kyojuro-rengoku-cke.jpg",
+            "race": "Pilar",
+            "friends": ["Tanjiro", "Giyu"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Shinobu",
+            "lastname": "Kocho",
+            "age": 18,
+            "photo": "https://cdn.superaficionados.com/imagenes/13-kimetsu-no-yaiba-personajes-shinobu-kocho-cke.jpg",
+            "race":"Pilar",
+            "friends": ["Inozuke", "Tanjiro"],
+            "sex": "Female"
+        },
+        {   
+            "name": "Muzan",
+            "lastname": "Kibutsuji",
+            "age": 10000,
+            "photo": "https://cdn.superaficionados.com/imagenes/17-kimetsu-no-yaiba-personajes-muzan-kibutsuji-cke.jpg",
+            "race":"Demonio",
+            "friends": ["Susamaru", "Yahaba"],
+            "sex": "Male"
+        }
+    ]
+}
