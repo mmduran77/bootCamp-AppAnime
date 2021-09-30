@@ -6,6 +6,5 @@ export default function About(){
         <div>
            <h4>Desarrollado por Miguel Duran</h4>
         </div>
-    )
-    
+    )    
 }

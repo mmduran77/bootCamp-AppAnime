@@ -3,7 +3,7 @@
         {   
             "name": "Tanjiro",
             "lastname": "Kamado",
-            "age": 13,            
+            "age": "13 años",            
             "photo": "https://cdn.superaficionados.com/imagenes/1-kimetsu-no-yaiba-personajes-tanjiro-kamado-1-cke.jpg",
             "race":"Cazador de Demonios",
             "friends": ["Inozuke", "Zenitsu"],
@@ -12,7 +12,7 @@
         {   
             "name": "Nezuko",
             "lastname": "Kamado",
-            "age": 12,
+            "age": "12 años",
             "photo": "https://cdn.superaficionados.com/imagenes/2-kimetsu-no-yaiba-personajes-nezuko-kamado-cke.jpg",
             "race": "Demonio",
             "friends": ["Tanjiro", "Zenitsu"],
@@ -21,7 +21,7 @@
         {   
             "name": "Zenitsu",
             "lastname": "Agatsuma",
-            "age": 16,
+            "age": "16 años",
             "photo": "https://cdn.superaficionados.com/imagenes/3-kimetsu-no-yaiba-personajes-zenitsu-agatsuma-cke.jpg",
             "race":"Cazador de Demonios",
             "friends": ["Inozuke", "Tanjiro"],
@@ -30,7 +30,7 @@
         {   
             "name": "Inosuke",
             "lastname": "Hashibira",
-            "age": 15,
+            "age": "16 años",
             "photo": "https://cdn.superaficionados.com/imagenes/4-kimetsu-no-yaiba-personajes-inosuke-hashibira-cke.jpg",
             "race":"Cazador de Demonios",
             "friends": ["Zenitsu", "Tanjiro"],
@@ -71,6 +71,42 @@
             "race":"Demonio",
             "friends": ["Susamaru", "Yahaba"],
             "sex": "Male"
+        },
+        {   
+            "name": "Yahaba",
+            "lastname": " ",
+            "age": "Desnonocido",
+            "photo": "https://cdn.superaficionados.com/imagenes/21-kimetsu-no-yaiba-personajes-yahaba-cke.jpg",
+            "race":"Demonio",
+            "friends": ["Muzan", "Susamaru"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Susamaru",
+            "lastname": " ",
+            "age": "Desconocido",
+            "photo": "https://cdn.superaficionados.com/imagenes/20-kimetsu-no-yaiba-personajes-susamaru-cke.jpg",
+            "race":"Demonio",
+            "friends": ["Muzan", "Yahaba"],
+            "sex": "Female"
+        },
+        {   
+            "name": "Iguro",
+            "lastname": "Iguro",
+            "age": "21 años",
+            "photo": "https://cdn.superaficionados.com/imagenes/7-kimetsu-no-yaiba-personajes-obanai-iguro-cke.jpg",
+            "race":"Pilar",
+            "friends": ["Mitsuri", "Giyu"],
+            "sex": "Male"
+        },
+        {   
+            "name": "Mitsuri",
+            "lastname": "Kanroji",
+            "age": 19,
+            "photo": "https://cdn.superaficionados.com/imagenes/6-kimetsu-no-yaiba-personajes-mitsuri-kanroji-cke.jpg",
+            "race":"Pilar",
+            "friends": ["Obanai ", "Tanjiro"],
+            "sex": "Female"
         }
     ]
 }

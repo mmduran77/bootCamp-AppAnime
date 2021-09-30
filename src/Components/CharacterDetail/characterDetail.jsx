@@ -1,27 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import data from "../../data.json"
 
-export default class CharacterDetail extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            Perfil: data.Characters[7],
-        };
-    }
-    onSelectClick = (evento) => {
-        this.setState(() => {
-            return {
-                Perfil : data.Characters.find( (personaje) => personaje.name === evento.target.value )
-            }
-        })
-    }
+
+//export default function CharacterDetail(){
+const CharacterDetail=()=>{
+   const [Perfil, setState] = useState(data.Characters[7]);
+        
     
-  
-    render(){
+   const onSelectClick = (evento) => {
+        setState(data.Characters.find( (personaje) => personaje.name === evento.target.value ))
+    };
+   
+      
         return(
             <div>
                 <h3> Selecciona un Personaje</h3>
-                <select onChange={(evento) => {this.onSelectClick(evento);}}>
+                <select onChange={(evento) => {onSelectClick(evento);}}>
                     {data.Characters.map((personaje) => (
                         <option value={personaje.name}>
                             {`${personaje.name} ${personaje.lastname}`}
@@ -33,19 +27,20 @@ export default class CharacterDetail extends React.Component{
                 <div>
                    
                     <div>
-                        <img src = {this.state.Perfil.photo} width="400" alt=""></img>
+                        <img src = {Perfil.photo} width="400" alt=""></img>
                     </div>
                     
-                    <p> Nombre: {this.state.Perfil.name}</p>
-                    <p> Apellido: {this.state.Perfil.lastname}</p>
-                    <p> Edad: {this.state.Perfil.age}</p>
-                    <p> Raza: {this.state.Perfil.race}</p>
-                    <p> Amigos: {this.state.Perfil.friends.map( (amigos) => {
+                    <p> Nombre: {Perfil.name}</p>
+                    <p> Apellido: {Perfil.lastname}</p>
+                    <p> Edad: {Perfil.age}</p>
+                    <p> Raza: {Perfil.race}</p>
+                    <p> Amigos: {Perfil.friends.map( (amigos) => {
                         <p> amigos</p> 
                     })}</p>
-                    <p> Sexo: {this.state.Perfil.sex}</p>         
+                    <p> Sexo: { Perfil.sex}</p>         
             </div>
         </div>
         )
-    }
+    
 }
+export default CharacterDetail;
