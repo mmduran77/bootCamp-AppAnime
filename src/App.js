@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar/navBar';
 import Home from './Components/Home/home';
 import CharacterDetail from './Components/CharacterDetail/characterDetail';
@@ -7,6 +8,8 @@ import About from './Components/About/about';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import CharDetail from './Components/CharacterDetail/charDetail';
+import Form from "./Components/Form/ControllerForm";
+
 
 
 function App() {
@@ -28,6 +31,9 @@ function App() {
                    
           <Route path="/About">
             <About />
+          </Route>
+          <Route path="/Form">
+            <Form />
           </Route>
         </Switch>
       </Router>

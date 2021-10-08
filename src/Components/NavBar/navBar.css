@@ -1,0 +1,10 @@
+.barra{
+    padding-Left: 13;
+    color: cornsilk;
+    text-decoration: none;
+    
+}
+
+.barra:hover {
+    color: rgb(134, 203, 243);
+}

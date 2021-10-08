@@ -1,0 +1,41 @@
+h1{
+    font-family: "Berlin Sans FB, Tahoma, sans-serif";
+    display: block;
+    text-align: center;
+    line-height: .8;
+    color: white;
+    margin: 40px;
+}
+
+.barra{
+    padding-Left: 13;
+    color: cornsilk;
+    text-decoration: none;
+    
+}
+  .centrar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:150px;
+}
+.fondoCard{
+  background-color: palegoldenrod;
+  text-align: center;
+  font-size: x-large;
+  color: rgb(94, 9, 54);
+}
+
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 20px;
+
+} 

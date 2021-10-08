@@ -1,6 +1,10 @@
 import React from "react";
 import data from "../../data.json";
 import { useParams, useHistory, useLocation } from "react-router";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/esm/Container";
+import "./character.css"
 
 export default function CharDetail(){
     const parametro = useParams();
@@ -9,41 +13,32 @@ export default function CharDetail(){
         console.log(location)
     const redireccionamiento = () => {
         history.push("/")
-    };
-    
-    
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         Perfil: data.Characters[7],
-    //     };
-    // }
+    };    
+       
     const Perfil= data.Characters.find( (personaje) => personaje.name === parametro.name );
-    
-    
-  
-    
+     
         return(
-            <div>
+            <div >
                 <h1> Caracterizticas Avanzadas del Personaje </h1>
-                <div >
-                                    <button  onClick={redireccionamiento}> REDIRECCIONAR AL HOME</button>
-                </div>
-                <div>                   
-                    <div>
-                        <img src = {Perfil.photo} width="400" alt=""></img>
-                    </div>
-                    
-                    <p> Nombre: {Perfil.name}</p>
-                    <p> Apellido: {Perfil.lastname}</p>
-                    <p> Edad: {Perfil.age}</p>
-                    <p> Raza: {Perfil.race}</p>
-                    <p> Amigos: {Perfil.friends.map( (amigos) => {
-                        <p> amigos</p> 
-                    })}</p>
-                    <p> Sexo: {Perfil.sex}</p>         
+                 <Container className="containerCharacter">             
+                    <Card className="fondoCard" border="dark" style={{ width: '30rem', border:'dark'}}>
+                            <Card.Header>{Perfil.name} {Perfil.lastname}</Card.Header>
+                            <Card.Img variant="top" src={Perfil.photo} />
+                            <Card.Body>                                  
+                                <Card.Text >
+                                    <p className="letras"> Nombre: {Perfil.name}</p>
+                                    <p className="letras"> Apellido: {Perfil.lastname}</p>
+                                    <p className="letras"> Edad: {Perfil.age}</p>
+                                    <p className="letras"> Raza: {Perfil.race}</p>  
+                                    <p className="letras"> Sexo: {Perfil.sex}</p> 
+                                </Card.Text>                                    
+                            </Card.Body>
+                            <Button onClick={redireccionamiento}  className="btn">
+                                REDIRECCIONAR AL HOME
+                            </Button>                        
+                    </Card>
+                </Container>
             </div>
-        </div>
         )
     
 }

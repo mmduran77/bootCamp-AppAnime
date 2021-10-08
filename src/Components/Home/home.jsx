@@ -1,8 +1,12 @@
 import React from "react";
 import data from "../../data.json"
-import Character from "../Character/character";
-import About from "../About/about";
 import { NavLink } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/col"
+import Container from "react-bootstrap/esm/Container";
+import "./home.css"
 
 export default class Home extends React.Component{
     constructor(props){
@@ -18,19 +22,34 @@ export default class Home extends React.Component{
     // }
     render(){
         return(
-            <div>
-                <h2> Listado de los personajes </h2>
+            <div >
+                
+                <h1> Listado de los personajes </h1>
                {data.Characters.map( (personaje) => {
                   return (
-                  <div>
-                       
-                       <img src={personaje.photo} alt="" width="200"/>
-                       <p> <NavLink to={`/CharDetail/${personaje.name}`}> {personaje.name} </NavLink> </p>
-                  </div>  )    
-                       
-                   
-               })}
-              
+                  <Container className="containerHome">     
+                       <Card border="dark" className="fondoCard centrar" style={{ width: '24rem', border:'dark'}}>
+                            <Card.Header>{personaje.name} {personaje.lastname}</Card.Header>
+                            <Card.Img variant="top" className="imgRedonda"  src={personaje.photo}  />
+                            <Card.Body>                                    
+                                <Card.Text>
+                                    <Button variant="dark">
+                                        <NavLink  to={`/CharDetail/${personaje.name}`} className="barra"> Mas... </NavLink>
+                                    </Button>
+                                </Card.Text>                                    
+                            </Card.Body>
+                        </Card>
+                                            
+                  </Container>                  
+                  )                       
+               })}       
+               <Row xs={1} md={2} className="g-4">
+                {Array.from({ length: data.Characters.length }).map((_, idx) => (
+                    <Col>
+                     
+                    </Col>
+                ))}
+                </Row>       
             </div>
         );
     }

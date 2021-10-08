@@ -1,0 +1,40 @@
+.letras{
+    color: rgb(45, 5, 97);
+    font-size: 1.2rem;
+    margin: 7px;
+}
+
+h1 {
+    font-family: "Berlin Sans FB, Tahoma, sans-serif";
+    display: block;
+    text-align: center;
+    line-height: .8;
+    color: white;
+}
+.fondoCard{
+    background-color: palegoldenrod;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(94, 9, 54);
+}
+.titulo{
+    background-color: beige;
+    color: blue;
+}
+.barra{
+    padding-Left: 13;
+    color: cornsilk;
+    text-decoration: none;
+    
+}
+.containerCharacter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  } 
+.btn{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+}

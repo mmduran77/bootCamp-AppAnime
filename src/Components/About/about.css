@@ -1,0 +1,35 @@
+h1, p {
+    font-family: "Berlin Sans FB, Tahoma, sans-serif";
+    display: block;
+    text-align: center;
+    line-height: .8;
+    color: white;
+}
+
+h3 {
+    font-family: "Berlin Sans FB, Tahoma, sans-serif";
+    display: block;
+    text-align: center;
+    line-height: .6;
+    color: rgb(110, 230, 87);
+    margin: 30px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    
+}
+.sinLink{
+    padding-Left: 13;
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.barra{
+    padding-Left: 13;
+    color: cornsilk;
+    text-decoration: none;
+    
+}
