@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/col"
 import Container from "react-bootstrap/esm/Container";
 import "./home.css"
+import Carousel from "react-bootstrap/Carousel"
 
 export default class Home extends React.Component{
     constructor(props){
@@ -25,9 +26,9 @@ export default class Home extends React.Component{
             <div >
                 
                 <h1> Listado de los personajes </h1>
-               {data.Characters.map( (personaje) => {
+               {/* {data.Characters.map( (personaje) => {
                   return (
-                  <Container className="containerHome">     
+                  <Container className="containerHome">                    
                        <Card border="dark" className="fondoCard centrar" style={{ width: '24rem', border:'dark'}}>
                             <Card.Header>{personaje.name} {personaje.lastname}</Card.Header>
                             <Card.Img variant="top" className="imgRedonda"  src={personaje.photo}  />
@@ -38,17 +39,32 @@ export default class Home extends React.Component{
                                     </Button>
                                 </Card.Text>                                    
                             </Card.Body>
-                        </Card>
-                                            
+                        </Card>                                            
                   </Container>                  
                   )                       
-               })}       
-               <Row xs={1} md={2} className="g-4">
-                {Array.from({ length: data.Characters.length }).map((_, idx) => (
-                    <Col>
-                     
-                    </Col>
-                ))}
+               })}        */}
+               <Row xs={1} md={3} className="g-4">
+                    {Array.from({ length: 1 }).map((_, idx) => (
+                        <>
+                            {data.Characters.map( (personaje) => {
+                                return (
+                                <Container className="containerHome">                    
+                                    <Card border="dark" className="fondoCard centrar" style={{ width: '18rem', border:'dark'}}>
+                                            <Card.Header>{personaje.name} {personaje.lastname}</Card.Header>
+                                            <Card.Img variant="top" className="imgRedonda"  src={personaje.photo}  />
+                                            <Card.Body>                                    
+                                                <Card.Text>
+                                                    <Button variant="dark">
+                                                        <NavLink  to={`/CharDetail/${personaje.name}`} className="barra"> Mas... </NavLink>
+                                                    </Button>
+                                                </Card.Text>                                    
+                                            </Card.Body>
+                                        </Card>                                            
+                                </Container>                  
+                    )                       
+                })}     
+                        </>
+                    ))}
                 </Row>       
             </div>
         );
